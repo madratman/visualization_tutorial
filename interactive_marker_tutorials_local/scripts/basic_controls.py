@@ -106,7 +106,16 @@ def rand( min_, max_ ):
 def makeBox( msg ):
     marker = Marker()
 
-    marker.type = Marker.CUBE
+    marker.type = Marker.MESH_RESOURCE
+    # marker.mesh_resource = 'package://turtle3d_resources/meshes/turtle.dae'
+    # marker.mesh_resource = '/home/ratnesh/projects/riss/ros_packages/src/Cone/meshes/Cone.STL'
+    # marker.mesh_resource = 'package://turtle3d_resources/meshes/Cone.STL'
+    marker.mesh_resource = 'package://visualization_tutorials/interactive_marker_tutorials_local/meshes/turtle.dae'
+    # marker.mesh_resource = 'package://interactive_marker_tutorials_local/HexagonalPrism.STL'
+
+    marker.mesh_use_embedded_materials = True
+
+    # marker.type = Marker.CUBE
     marker.scale.x = msg.scale * 0.45
     marker.scale.y = msg.scale * 0.45
     marker.scale.z = msg.scale * 0.45
@@ -434,28 +443,28 @@ if __name__=="__main__":
     
     position = Point(-3, 3, 0)
     make6DofMarker( False, InteractiveMarkerControl.NONE, position, True)
-    position = Point( 0, 3, 0)
-    make6DofMarker( True, InteractiveMarkerControl.NONE, position, True)
-    position = Point( 3, 3, 0)
-    makeRandomDofMarker( position )
-    position = Point(-3, 0, 0)
-    make6DofMarker( False, InteractiveMarkerControl.ROTATE_3D, position, False)
-    position = Point( 0, 0, 0)
-    make6DofMarker( False, InteractiveMarkerControl.MOVE_ROTATE_3D, position, True )
-    position = Point( 3, 0, 0)
-    make6DofMarker( False, InteractiveMarkerControl.MOVE_3D, position, False)
-    position = Point(-3, -3, 0)
-    makeViewFacingMarker( position )
-    position = Point( 0, -3, 0)
-    makeQuadrocopterMarker( position )
-    position = Point( 3, -3, 0)
-    makeChessPieceMarker( position )
-    position = Point(-3, -6, 0)
-    makePanTiltMarker( position )
-    position = Point( 0, -6, 0)
-    makeMovingMarker( position )
-    position = Point( 3, -6, 0)
-    makeMenuMarker( position )
+    # position = Point( 0, 3, 0)
+    # make6DofMarker( True, InteractiveMarkerControl.NONE, position, True)
+    # position = Point( 3, 3, 0)
+    # makeRandomDofMarker( position )
+    # position = Point(-3, 0, 0)
+    # make6DofMarker( False, InteractiveMarkerControl.ROTATE_3D, position, False)
+    # position = Point( 0, 0, 0)
+    # make6DofMarker( False, InteractiveMarkerControl.MOVE_ROTATE_3D, position, True )
+    # position = Point( 3, 0, 0)
+    # make6DofMarker( False, InteractiveMarkerControl.MOVE_3D, position, False)
+    # position = Point(-3, -3, 0)
+    # makeViewFacingMarker( position )
+    # position = Point( 0, -3, 0)
+    # makeQuadrocopterMarker( position )
+    # position = Point( 3, -3, 0)
+    # makeChessPieceMarker( position )
+    # position = Point(-3, -6, 0)
+    # makePanTiltMarker( position )
+    # position = Point( 0, -6, 0)
+    # makeMovingMarker( position )
+    # position = Point( 3, -6, 0)
+    # makeMenuMarker( position )
     
 
     server.applyChanges()

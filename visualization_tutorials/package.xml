@@ -14,7 +14,7 @@
 
     <buildtool_depend>catkin</buildtool_depend>
 
-    <run_depend>interactive_marker_tutorials</run_depend>
+    <run_depend>interactive_marker_tutorials_local</run_depend>
     <run_depend>librviz_tutorial</run_depend>
     <run_depend>rviz_plugin_tutorials</run_depend>
     <run_depend>rviz_python_tutorial</run_depend>

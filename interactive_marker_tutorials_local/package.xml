@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
-<package>
-  <name>interactive_marker_tutorials</name>
-  <version>0.9.1</version>
+<package>0.
+  <name>interactive_marker_tutorials_local</name>
+  <version>0.0.1</version>
   <description>The interactive_marker_tutorials package</description>
 
-  <maintainer email="william@osrfoundation.org">William Woodall</maintainer>
+  <maintainer email="ratneshmadaan@gmail.com"></maintainer>
 
   <license>BSD</license>
-  <url type="website">http://ros.org/wiki/interactive_marker_tutorials</url>
+  <url type="website"></url>
 
   <author >David Gossow</author>
 

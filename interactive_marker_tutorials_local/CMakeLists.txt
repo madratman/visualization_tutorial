@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(interactive_marker_tutorials)
+project(interactive_marker_tutorials_local)
 
 find_package(catkin REQUIRED COMPONENTS interactive_markers roscpp visualization_msgs tf)
 
